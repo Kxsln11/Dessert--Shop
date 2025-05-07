@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tegsh Ontsogt 6</title>
+  <style>
+    .tegshontsogt6  {
+      display: grid;
+      grid-template-columns: repeat(9, 100px);
+      gap: 10px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      clip-path: polygon(
+        25% 0%, 75% 0%,
+        100% 50%,
+        75% 100%, 25% 100%,
+        0% 50%
+      );
+    }
+
+    @media (max-width: 900px) {
+      .tegshontsogt6  {
+        grid-template-columns: repeat(3, 100px);
+      }
+    }
+
+
+    @media (max-width: 600px) {
+      .tegshontsogt6  {
+        grid-template-columns: repeat(2, 100px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .tegshontsogt6  {
+        grid-template-columns: repeat(1, 100px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tegshontsogt6 ">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+   
+  </div>
+</body>
+</html>
